@@ -4,7 +4,7 @@ import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@EnableEncryptableProperties    // springBoot 3.2.x버전에서 애노테이션 적용해야 복호화 가능
+@EnableEncryptableProperties  // Spring Boot 3.2.x에서는 필수로 적용해야 Jasypt 복호화 동작(Jasypt 암복호화 빈 조기 등록)
 @SpringBootApplication
 public class ShadowApiApplication {
 
